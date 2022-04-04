@@ -3,7 +3,7 @@ image: Visual Studio 2019
 build: off
 
 test_script:
-- ps: 'Get-ChildItem env: | Set-Content vars.txt'
+- ps: 'Get-ChildItem env: | Out-String | Set-Content vars.txt'
 
 artifacts:
 - path: agentpkg
