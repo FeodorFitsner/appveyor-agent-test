@@ -3,8 +3,9 @@ image: Visual Studio 2019
 build: off
 
 test_script:
-- ps: 'Get-ChildItem env:'
+- ps: 'Get-ChildItem env: | Set-Content vars.txt'
 
 artifacts:
 - path: agentpkg
   name: WinApp
+- path: vars.txt
