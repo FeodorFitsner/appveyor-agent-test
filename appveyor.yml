@@ -9,3 +9,7 @@ artifacts:
 - path: agentpkg
   name: WinApp
 - path: vars.txt
+
+deploy:
+- provider: Environment
+  name: test-agent-delete-me
