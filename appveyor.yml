@@ -3,7 +3,7 @@ image: Visual Studio 2019
 build: off
 
 test_script:
-- ps: Get-ChildItem env:
+- ps: 'Get-ChildItem env:'
 
 artifacts:
 - path: agentpkg
